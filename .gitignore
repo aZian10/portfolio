@@ -46,14 +46,12 @@ test-results/
 .DS_Store
 Thumbs.db
 
+# AI harness files (session-specific, not project documentation)
+AGENTS.md
+.ai/
+.agents/
+
 # Temporary / artifacts
 tmp/
 temp/
-
-# AI instruction files
-AGENTS.md
-.ai/
-CLAUDE.md
-GEMINI.md
-COPILOT.md
-CURSOR.md
+skills-lock.json
