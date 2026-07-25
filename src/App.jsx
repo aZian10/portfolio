@@ -1,5 +1,10 @@
+import Layout from './components/layout/Layout/Layout.jsx'
 import AppRoutes from './routes/AppRoutes.jsx'
 
 export default function App() {
-  return <AppRoutes />
+  return (
+    <Layout>
+      <AppRoutes />
+    </Layout>
+  )
 }

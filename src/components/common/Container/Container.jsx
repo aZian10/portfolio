@@ -1,3 +1,10 @@
-export default function Container() {
-  return null
+export default function Container({ children, className = '', ...props }) {
+  return (
+    <div
+      className={`mx-auto w-full max-w-container px-4 sm:px-6 lg:px-8 ${className}`}
+      {...props}
+    >
+      {children}
+    </div>
+  )
 }
