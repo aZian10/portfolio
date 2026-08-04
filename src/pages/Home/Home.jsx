@@ -1,4 +1,5 @@
 import Navbar from '../../components/layout/Navbar/Navbar.jsx'
+import Footer from '../../components/layout/Footer/Footer.jsx'
 import Hero from '../../sections/Hero/Hero.jsx'
 import About from '../../sections/About/About.jsx'
 import Experience from '../../sections/Experience/Experience.jsx'
@@ -16,6 +17,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Contact />
+      <Footer />
     </>
   )
 }
