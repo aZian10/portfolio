@@ -1,6 +1,6 @@
 export const about = {
   number: '01',
-  eyebrow: 'About Me',
+  eyebrow: 'About',
   title: 'Transforming ideas into digital experiences',
   description:
     'A passionate web developer focused on building clean, accessible, and performant applications.',

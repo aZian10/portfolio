@@ -1,6 +1,7 @@
 export const hero = {
   greeting: "Hi, I'm",
   name: 'Elian Rivera',
+  role: 'Frontend Developer',
   tagline:
     'I build accessible, performant web experiences with modern technologies.',
   primaryCta: {

@@ -4,6 +4,7 @@ import useActiveSection from '../../../hooks/useActiveSection.js'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const links = navigation.filter((item) => item.id !== 'hero')
   const sectionIds = navigation.map((item) => item.id)
   const activeId = useActiveSection(sectionIds)
 
@@ -17,36 +18,34 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 z-50 w-full border-b border-surface-800/70 bg-surface-950/80 backdrop-blur-sm"
+      className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-surface-950/80 backdrop-blur-sm"
       aria-label="Main navigation"
     >
-      <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3.5 sm:px-6 sm:py-4 lg:px-8">
+      <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         <a
           href="#hero"
-          className="text-lg font-bold text-surface-50 transition-colors duration-300 hover:text-sky-400"
+          className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 hover:text-sky-400"
         >
-          Elian Rivera
+          ED
+          <span aria-hidden="true" className="h-1 w-1 rounded-full bg-sky-400" />
         </a>
 
-        <ul className="hidden items-center gap-1 md:flex" role="list">
-          {navigation.map(({ id, label }) => {
+        <ul className="hidden items-center gap-6 md:flex" role="list">
+          {links.map(({ id, label }) => {
             const isActive = activeId === id
 
             return (
               <li key={id}>
                 <a
                   href={`#${id}`}
-                  aria-current={isActive ? 'page' : undefined}
-                  className={`relative px-3 py-2 text-sm transition-colors duration-300 ${
+                  aria-current={isActive ? 'true' : undefined}
+                  className={`text-[11px] transition-colors duration-300 ${
                     isActive
                       ? 'font-semibold text-sky-400'
                       : 'font-normal text-surface-400 hover:text-surface-50'
                   }`}
                 >
                   {label}
-                  {isActive && (
-                    <span className="absolute bottom-0 left-1/2 h-0.5 w-5 -translate-x-1/2 rounded-full bg-sky-400" />
-                  )}
                 </a>
               </li>
             )
@@ -86,14 +85,14 @@ export default function Navbar() {
         }`}
       >
         <ul className="flex flex-col gap-1 px-4 pb-4" role="list">
-          {navigation.map(({ id, label }) => {
+          {links.map(({ id, label }) => {
             const isActive = activeId === id
 
             return (
               <li key={id}>
                 <a
                   href={`#${id}`}
-                  aria-current={isActive ? 'page' : undefined}
+                  aria-current={isActive ? 'true' : undefined}
                   onClick={closeMobileMenu}
                   className={`block rounded px-3 py-2 text-sm transition-colors duration-300 ${
                     isActive
