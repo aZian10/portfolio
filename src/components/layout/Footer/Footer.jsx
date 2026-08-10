@@ -8,11 +8,13 @@ const linkClass =
 
 export default function Footer() {
   return (
-    <footer className="border-t border-surface-800 bg-surface-950">
+    <footer className="border-t border-surface-800/70 bg-surface-950">
       <Container className="flex flex-col items-center gap-10 py-16 text-center lg:flex-row lg:items-start lg:justify-between lg:text-left">
         <div className="max-w-sm">
-          <p className="text-lg font-bold text-surface-50">{footer.name}</p>
-          <p className="mt-3 text-sm leading-relaxed text-surface-500">
+          <p className="text-xl font-bold tracking-tight text-surface-50">
+            {footer.name}
+          </p>
+          <p className="mt-3 text-sm leading-relaxed text-surface-400">
             {footer.tagline}
           </p>
         </div>
@@ -44,7 +46,7 @@ export default function Footer() {
               </li>
             ))}
           </ul>
-          <p className="text-xs text-surface-500">{footer.copyright}</p>
+          <p className="text-xs text-surface-400">{footer.copyright}</p>
         </div>
       </Container>
     </footer>

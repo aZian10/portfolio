@@ -1,4 +1,5 @@
 export const about = {
+  number: '01',
   eyebrow: 'About Me',
   title: 'Transforming ideas into digital experiences',
   description:

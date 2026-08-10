@@ -6,15 +6,15 @@ import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 export default function About() {
   return (
     <Section id="about">
-      <Container className="text-center">
+      <Container>
         <SectionTitle
+          number={about.number}
           eyebrow={about.eyebrow}
           title={about.title}
           description={about.description}
-          className="mx-auto"
         />
 
-        <div className="mx-auto mt-10 max-w-3xl space-y-4 sm:mt-12">
+        <div className="mt-14 max-w-3xl space-y-4">
           {about.paragraphs.map((paragraph, index) => (
             <p
               key={index}
@@ -25,21 +25,21 @@ export default function About() {
           ))}
         </div>
 
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-8">
+        <dl className="mt-16 grid grid-cols-1 gap-10 border-t border-surface-800 pt-10 sm:grid-cols-3 sm:gap-8">
           {about.stats.map((stat) => (
             <div
               key={stat.label}
-              className="rounded-xl border border-surface-800 bg-surface-900/50 px-6 py-8 backdrop-blur-sm"
+              className="flex flex-col text-center sm:text-left"
             >
-              <p className="text-3xl font-bold text-sky-400 sm:text-4xl">
+              <dd className="order-1 text-4xl font-bold tracking-tight text-surface-50 sm:text-5xl">
                 {stat.value}
-              </p>
-              <p className="text-surface-400 mt-2 text-sm font-medium uppercase tracking-wider">
+              </dd>
+              <dt className="order-2 mt-2 text-xs font-semibold uppercase tracking-[0.2em] text-surface-400">
                 {stat.label}
-              </p>
+              </dt>
             </div>
           ))}
-        </div>
+        </dl>
       </Container>
     </Section>
   )

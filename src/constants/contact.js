@@ -1,4 +1,5 @@
 export const contact = {
+  number: '05',
   eyebrow: 'Contact',
   title: "Let's build something together",
   description:
