@@ -50,6 +50,10 @@ Thumbs.db
 AGENTS.md
 .ai/
 .agents/
+.codex/
+
+# Impeccable (design skill) — machine-local config only
+.impeccable/config.local.json
 
 # Temporary / artifacts
 tmp/
