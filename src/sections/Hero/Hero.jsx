@@ -9,20 +9,28 @@ export default function Hero() {
       className="relative flex min-h-screen items-center justify-center bg-surface-950 pt-16"
     >
       <Container className="text-center">
-        <p className="mb-4 text-lg font-medium text-sky-400">
+        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-400 sm:text-base">
           {hero.greeting}
         </p>
-        <h1 className="mb-6 text-4xl font-bold text-surface-50 sm:text-5xl lg:text-6xl">
+        <h1 className="mt-5 text-5xl font-extrabold tracking-tight text-surface-50 sm:text-6xl md:text-7xl lg:text-8xl">
           {hero.name}
         </h1>
-        <p className="mx-auto mb-8 max-w-2xl text-lg text-surface-400 sm:text-xl">
+        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-surface-300 sm:text-xl">
           {hero.tagline}
         </p>
-        <div className="flex flex-col gap-4 sm:flex-row sm:justify-center">
-          <Button variant="primary" href={hero.primaryCta.href}>
+        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-5">
+          <Button
+            variant="primary"
+            href={hero.primaryCta.href}
+            className="px-7 py-3.5 text-base"
+          >
             {hero.primaryCta.label}
           </Button>
-          <Button variant="secondary" href={hero.secondaryCta.href}>
+          <Button
+            variant="secondary"
+            href={hero.secondaryCta.href}
+            className="px-7 py-3.5 text-base"
+          >
             {hero.secondaryCta.label}
           </Button>
         </div>

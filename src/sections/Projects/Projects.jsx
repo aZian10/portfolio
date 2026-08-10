@@ -9,15 +9,15 @@ export default function Projects() {
     <Section id="projects">
       <Container>
         <SectionTitle
+          number={projects.number}
           eyebrow={projects.eyebrow}
           title={projects.title}
           description={projects.description}
-          className="mx-auto text-center"
         />
 
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.items.map((project) => (
-            <ProjectCard key={project.name} project={project} />
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {projects.items.map((project, index) => (
+            <ProjectCard key={project.name} project={project} index={index} />
           ))}
         </div>
       </Container>
