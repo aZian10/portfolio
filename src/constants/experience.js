@@ -1,4 +1,5 @@
 export const experience = {
+  number: '04',
   eyebrow: 'Experience',
   title: 'Where I have worked and learned',
   description:

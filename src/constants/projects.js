@@ -1,5 +1,6 @@
 export const projects = {
-  eyebrow: 'Projects',
+  number: '02',
+  eyebrow: 'Featured Projects',
   title: 'Projects I have built',
   description:
     'A selection of projects that show how I approach building clean, accessible, and performant web applications.',

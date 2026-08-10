@@ -1,4 +1,5 @@
 export const skills = {
+  number: '03',
   eyebrow: 'Skills',
   title: 'Technologies I work with',
   description:

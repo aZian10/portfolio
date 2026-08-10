@@ -17,10 +17,10 @@ export default function Navbar() {
 
   return (
     <nav
-      className="fixed top-0 left-0 z-50 w-full bg-surface-950/80 backdrop-blur-sm"
+      className="fixed top-0 left-0 z-50 w-full border-b border-surface-800/70 bg-surface-950/80 backdrop-blur-sm"
       aria-label="Main navigation"
     >
-      <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
+      <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3.5 sm:px-6 sm:py-4 lg:px-8">
         <a
           href="#hero"
           className="text-lg font-bold text-surface-50 transition-colors duration-300 hover:text-sky-400"
@@ -45,7 +45,7 @@ export default function Navbar() {
                 >
                   {label}
                   {isActive && (
-                    <span className="absolute bottom-0 left-3 right-3 h-0.5 rounded-full bg-sky-400" />
+                    <span className="absolute bottom-0 left-1/2 h-0.5 w-5 -translate-x-1/2 rounded-full bg-sky-400" />
                   )}
                 </a>
               </li>

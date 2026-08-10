@@ -7,7 +7,7 @@ export default function Layout({ children }) {
         <main
           id="main-content"
           tabIndex={-1}
-          className="min-h-screen py-16 sm:py-20 lg:py-24"
+          className="min-h-screen"
         >
           {children}
         </main>
