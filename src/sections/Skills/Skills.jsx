@@ -7,32 +7,26 @@ export default function Skills() {
   return (
     <Section id="skills">
       <Container>
-        <SectionTitle
-          number={skills.number}
-          eyebrow={skills.eyebrow}
-          title={skills.title}
-          description={skills.description}
-        />
-
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {skills.items.map((skill) => (
-            <div
-              key={skill.name}
-              className="group rounded-xl border border-surface-800 bg-surface-900/40 px-5 py-6 transition-colors duration-300 hover:border-sky-400/30 hover:bg-surface-800/40"
-            >
-              <div className="mb-3 flex items-start justify-between gap-4">
-                <h3 className="font-semibold text-surface-50 transition-colors duration-300 motion-safe:group-hover:text-sky-400">
-                  {skill.name}
-                </h3>
-                <span className="shrink-0 rounded-full border border-surface-700/60 bg-surface-950/40 px-3 py-1 text-xs font-medium text-surface-400">
-                  {skill.category}
-                </span>
-              </div>
-              <p className="text-surface-400 text-sm leading-relaxed">
-                {skill.description}
-              </p>
-            </div>
-          ))}
+        <div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-9">
+          <SectionTitle number={skills.number} title={skills.eyebrow} />
+          <ul
+            className="flex flex-wrap gap-x-8 gap-y-3"
+            role="list"
+            aria-label="Technologies"
+          >
+            {skills.items.map((skill) => (
+              <li
+                key={skill.name}
+                className="flex items-center gap-2 text-[11px] text-surface-300"
+              >
+                <span
+                  aria-hidden="true"
+                  className="h-1 w-1 rounded-full bg-sky-400/70"
+                />
+                {skill.name}
+              </li>
+            ))}
+          </ul>
         </div>
       </Container>
     </Section>

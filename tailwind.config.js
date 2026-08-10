@@ -15,11 +15,11 @@ export default {
           700: '#334155',
           800: '#1e293b',
           900: '#0f172a',
-          950: '#020617',
+          950: '#0B1120',
         },
       },
       maxWidth: {
-        container: '80rem',
+        container: '48.75rem',
       },
       fontFamily: {
         sans: [

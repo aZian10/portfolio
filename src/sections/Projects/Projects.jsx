@@ -5,20 +5,18 @@ import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 import ProjectCard from './ProjectCard.jsx'
 
 export default function Projects() {
+  const featured = projects.items.slice(0, 3)
+
   return (
     <Section id="projects">
       <Container>
-        <SectionTitle
-          number={projects.number}
-          eyebrow={projects.eyebrow}
-          title={projects.title}
-          description={projects.description}
-        />
-
-        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.items.map((project, index) => (
-            <ProjectCard key={project.name} project={project} index={index} />
-          ))}
+        <div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-9">
+          <SectionTitle number={projects.number} title={projects.eyebrow} />
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10">
+            {featured.map((project, index) => (
+              <ProjectCard key={project.name} project={project} index={index} />
+            ))}
+          </div>
         </div>
       </Container>
     </Section>

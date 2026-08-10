@@ -4,33 +4,23 @@ import Container from '../../components/common/Container/Container.jsx'
 
 export default function Hero() {
   return (
-    <section
-      id="hero"
-      className="relative flex min-h-screen items-center justify-center bg-surface-950 pt-16"
-    >
-      <Container className="text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-sky-400 sm:text-base">
+    <section id="hero" className="bg-surface-950">
+      <Container className="flex flex-col items-center justify-center pt-36 pb-24 text-center">
+        <p className="text-[11px] font-medium uppercase tracking-[0.25em] text-sky-400">
           {hero.greeting}
         </p>
-        <h1 className="mt-5 text-5xl font-extrabold tracking-tight text-surface-50 sm:text-6xl md:text-7xl lg:text-8xl">
+        <h1 className="mt-4 text-[36px] font-medium leading-tight tracking-tight text-surface-50 sm:text-[38px]">
           {hero.name}
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-surface-300 sm:text-xl">
+        <p className="mt-3 text-[13px] font-medium text-sky-400">{hero.role}</p>
+        <p className="mt-4 max-w-md text-[11px] leading-relaxed text-surface-400">
           {hero.tagline}
         </p>
-        <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-5">
-          <Button
-            variant="primary"
-            href={hero.primaryCta.href}
-            className="px-7 py-3.5 text-base"
-          >
+        <div className="mt-8 flex items-center gap-3">
+          <Button variant="primary" href={hero.primaryCta.href}>
             {hero.primaryCta.label}
           </Button>
-          <Button
-            variant="secondary"
-            href={hero.secondaryCta.href}
-            className="px-7 py-3.5 text-base"
-          >
+          <Button variant="secondary" href={hero.secondaryCta.href}>
             {hero.secondaryCta.label}
           </Button>
         </div>

@@ -4,9 +4,7 @@ export const projects = {
   title: 'Projects I have built',
   description:
     'A selection of projects that show how I approach building clean, accessible, and performant web applications.',
-  githubLabel: 'GitHub',
-  demoLabel: 'Live demo',
-  demoPlaceholder: 'Demo coming soon',
+  viewLabel: 'View project',
   items: [
     {
       name: 'TaskFlow',
