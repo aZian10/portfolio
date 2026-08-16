@@ -25,7 +25,7 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <a
             href="#hero"
-            className="flex items-center gap-1.5 text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 hover:text-sky-400"
+            className="flex items-center gap-1.5 rounded text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 hover:text-sky-400 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
           >
             ED
             <span
@@ -42,8 +42,8 @@ export default function Navbar() {
                 <li key={id}>
                   <a
                     href={`#${id}`}
-                    aria-current={isActive ? 'true' : undefined}
-                    className={`text-[11px] transition-colors duration-300 ${
+                    aria-current={isActive ? 'page' : undefined}
+                    className={`rounded text-[11px] transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
                       isActive
                         ? 'font-semibold text-sky-400'
                         : 'font-normal text-surface-400 hover:text-surface-50'
@@ -59,7 +59,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={toggleMobileMenu}
-            className="flex flex-col gap-1.5 p-2 md:hidden"
+            className="flex flex-col gap-1.5 rounded p-2 md:hidden focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
@@ -85,7 +85,7 @@ export default function Navbar() {
         <div
           id="mobile-menu"
           className={`overflow-hidden transition-all duration-300 md:hidden ${
-            isMobileMenuOpen ? 'max-h-80' : 'max-h-0'
+            isMobileMenuOpen ? 'visible max-h-80' : 'invisible max-h-0'
           }`}
         >
           <ul className="flex flex-col gap-1 px-4 pb-4" role="list">
@@ -96,9 +96,9 @@ export default function Navbar() {
                 <li key={id}>
                   <a
                     href={`#${id}`}
-                    aria-current={isActive ? 'true' : undefined}
+                    aria-current={isActive ? 'page' : undefined}
                     onClick={closeMobileMenu}
-                    className={`block rounded px-3 py-2 text-sm transition-colors duration-300 ${
+                    className={`block rounded px-3 py-2 text-sm transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
                       isActive
                         ? 'bg-surface-800 font-semibold text-sky-400'
                         : 'font-normal text-surface-400 hover:bg-surface-800/50 hover:text-surface-50'
