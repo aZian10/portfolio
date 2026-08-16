@@ -11,12 +11,14 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+      <main id="main-content" tabIndex={-1} className="min-h-screen">
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+      </main>
       <Footer />
     </>
   )
