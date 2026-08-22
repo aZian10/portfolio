@@ -1,4 +1,5 @@
 import { useState, useCallback } from 'react'
+import Container from '../../common/Container/Container.jsx'
 import { navigation } from '../../../constants/navigation.js'
 import useActiveSection from '../../../hooks/useActiveSection.js'
 
@@ -22,7 +23,7 @@ export default function Navbar() {
         className="fixed top-0 left-0 z-50 w-full border-b border-white/10 bg-surface-950/80 backdrop-blur-sm"
         aria-label="Main navigation"
       >
-        <div className="mx-auto flex max-w-container items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <Container className="flex items-center justify-between py-3">
           <a
             href="#hero"
             className="flex items-center gap-1.5 rounded text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 hover:text-sky-400 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
@@ -80,7 +81,7 @@ export default function Navbar() {
               }`}
             />
           </button>
-        </div>
+        </Container>
 
         <div
           id="mobile-menu"
