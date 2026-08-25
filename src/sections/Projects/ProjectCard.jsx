@@ -21,7 +21,7 @@ export default function ProjectCard({ project, index }) {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-4 inline-flex items-center gap-1 text-[10px] font-medium text-sky-400 transition-colors duration-200 hover:text-sky-300 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-sky-400 focus:outline-none"
+        className="mt-2 py-2 inline-flex items-center gap-1 text-[10px] font-medium text-sky-400 transition-colors duration-200 hover:text-sky-300 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-sky-400 focus:outline-none"
       >
         {projects.viewLabel}
         <span aria-hidden="true">→</span>

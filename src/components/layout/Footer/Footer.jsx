@@ -3,7 +3,7 @@ import { footer } from '../../../constants/footer.js'
 import { socials } from '../../../constants/socials.js'
 
 const linkClass =
-  'text-[9px] font-medium text-surface-400 underline-offset-4 transition-colors duration-300 hover:text-sky-400 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none'
+  'p-2 -m-2 rounded text-[9px] font-medium text-surface-400 underline-offset-4 transition-colors duration-300 hover:text-sky-400 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none'
 
 export default function Footer() {
   return (
