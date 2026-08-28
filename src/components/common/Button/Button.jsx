@@ -6,7 +6,7 @@ export default function Button({
   ...props
 }) {
   const base =
-    'inline-flex items-center justify-center rounded-md px-5 py-2 text-[11px] font-medium tracking-wide transition-colors duration-200 ease-in-out cursor-pointer focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none'
+    'inline-flex items-center justify-center rounded-md px-5 py-2 text-[11px] font-medium tracking-wide transition-colors duration-200 ease-in-out motion-reduce:transition-none cursor-pointer focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none'
 
   const styles = {
     primary:

@@ -24,10 +24,10 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         <Container className="flex items-center justify-between py-3">
-          <a
-            href="#hero"
-            className="flex items-center gap-1.5 rounded text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 hover:text-sky-400 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
-          >
+<a
+              href="#hero"
+              className="flex items-center gap-1.5 rounded text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 motion-reduce:transition-none hover:text-sky-400 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
+            >
             ED
             <span
               aria-hidden="true"
@@ -41,15 +41,15 @@ export default function Navbar() {
 
               return (
                 <li key={id}>
-                  <a
-                    href={`#${id}`}
-                    aria-current={isActive ? 'page' : undefined}
-                    className={`rounded text-[11px] transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
-                      isActive
-                        ? 'font-semibold text-sky-400'
-                        : 'font-normal text-surface-400 hover:text-surface-50'
-                    }`}
-                  >
+<a
+                      href={`#${id}`}
+                      aria-current={isActive ? 'page' : undefined}
+                      className={`rounded text-[11px] transition-colors duration-300 motion-reduce:transition-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
+                        isActive
+                          ? 'font-semibold text-sky-400'
+                          : 'font-normal text-surface-400 hover:text-surface-50'
+                      }`}
+                    >
                     {label}
                   </a>
                 </li>
@@ -65,46 +65,46 @@ export default function Navbar() {
             aria-controls="mobile-menu"
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
           >
-            <span
-              className={`block h-0.5 w-6 rounded bg-surface-100 transition-all duration-300 ${
-                isMobileMenuOpen ? 'translate-y-2 rotate-45' : ''
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 rounded bg-surface-100 transition-all duration-300 ${
-                isMobileMenuOpen ? 'opacity-0' : ''
-              }`}
-            />
-            <span
-              className={`block h-0.5 w-6 rounded bg-surface-100 transition-all duration-300 ${
-                isMobileMenuOpen ? '-translate-y-2 -rotate-45' : ''
-              }`}
-            />
+<span
+                className={`block h-0.5 w-6 rounded bg-surface-100 transition-all duration-300 motion-reduce:transition-none ${
+                  isMobileMenuOpen ? 'translate-y-2 rotate-45' : ''
+                }`}
+              />
+              <span
+                className={`block h-0.5 w-6 rounded bg-surface-100 transition-all duration-300 motion-reduce:transition-none ${
+                  isMobileMenuOpen ? 'opacity-0' : ''
+                }`}
+              />
+              <span
+                className={`block h-0.5 w-6 rounded bg-surface-100 transition-all duration-300 motion-reduce:transition-none ${
+                  isMobileMenuOpen ? '-translate-y-2 -rotate-45' : ''
+                }`}
+              />
           </button>
         </Container>
 
-        <div
-          id="mobile-menu"
-          className={`overflow-hidden transition-all duration-300 md:hidden ${
-            isMobileMenuOpen ? 'visible max-h-80' : 'invisible max-h-0'
-          }`}
-        >
+<div
+            id="mobile-menu"
+            className={`overflow-hidden transition-all duration-300 motion-reduce:transition-none md:hidden ${
+              isMobileMenuOpen ? 'visible max-h-80' : 'invisible max-h-0'
+            }`}
+          >
           <ul className="flex flex-col gap-1 px-4 pb-4" role="list">
             {links.map(({ id, label }) => {
               const isActive = activeId === id
 
               return (
                 <li key={id}>
-                  <a
-                    href={`#${id}`}
-                    aria-current={isActive ? 'page' : undefined}
-                    onClick={closeMobileMenu}
-                    className={`block rounded px-3 py-2 text-sm transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
-                      isActive
-                        ? 'bg-surface-800 font-semibold text-sky-400'
-                        : 'font-normal text-surface-400 hover:bg-surface-800/50 hover:text-surface-50'
-                    }`}
-                  >
+<a
+                        href={`#${id}`}
+                        aria-current={isActive ? 'page' : undefined}
+                        onClick={closeMobileMenu}
+                        className={`block rounded px-3 py-2 text-sm transition-colors duration-300 motion-reduce:transition-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
+                          isActive
+                            ? 'bg-surface-800 font-semibold text-sky-400'
+                            : 'font-normal text-surface-400 hover:bg-surface-800/50 hover:text-surface-50'
+                        }`}
+                      >
                     {label}
                   </a>
                 </li>
