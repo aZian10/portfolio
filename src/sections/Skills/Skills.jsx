@@ -4,11 +4,12 @@ import Container from '../../components/common/Container/Container.jsx'
 import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 
 export default function Skills() {
+  const headingId = 'skills-heading'
   return (
-    <Section id="skills">
+    <Section id="skills" headingId={headingId}>
       <Container>
         <div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-9">
-          <SectionTitle number={skills.number} title={skills.eyebrow} />
+          <SectionTitle headingId={headingId} number={skills.number} title={skills.eyebrow} />
           <ul
             className="flex flex-wrap gap-x-8 gap-y-3"
             role="list"

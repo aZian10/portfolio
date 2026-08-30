@@ -1,11 +1,11 @@
 export default function SectionTitle({
-  id,
+  headingId,
   number,
   title,
   className = '',
 }) {
   return (
-    <header id={id} className={className}>
+    <header className={className}>
       <div className="flex items-center gap-2">
         <span
           aria-hidden="true"
@@ -17,7 +17,7 @@ export default function SectionTitle({
           </span>
         )}
       </div>
-      <h2 className="mt-3 text-[20px] font-medium tracking-tight text-surface-50">
+      <h2 id={headingId} className="mt-3 text-[20px] font-medium tracking-tight text-surface-50">
         {title}
       </h2>
     </header>

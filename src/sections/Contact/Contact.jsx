@@ -5,12 +5,13 @@ import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 
 export default function Contact() {
   const mailtoHref = `mailto:${contact.email}`
+  const headingId = 'contact-heading'
 
   return (
-    <Section id="contact">
+    <Section id="contact" headingId={headingId}>
       <Container>
         <div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-9">
-          <SectionTitle number={contact.number} title={contact.eyebrow} />
+          <SectionTitle headingId={headingId} number={contact.number} title={contact.eyebrow} />
           <div>
             <p className="max-w-md text-[12px] leading-relaxed text-surface-400">
               {contact.title}
