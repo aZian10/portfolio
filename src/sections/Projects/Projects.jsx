@@ -6,12 +6,13 @@ import ProjectCard from './ProjectCard.jsx'
 
 export default function Projects() {
   const featured = projects.items.slice(0, 3)
+  const headingId = 'projects-heading'
 
   return (
-    <Section id="projects">
+    <Section id="projects" headingId={headingId}>
       <Container>
         <div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-9">
-          <SectionTitle number={projects.number} title={projects.eyebrow} />
+          <SectionTitle headingId={headingId} number={projects.number} title={projects.eyebrow} />
           <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-8 md:divide-x md:divide-white/10">
             {featured.map((project, index) => (
               <ProjectCard key={project.name} project={project} index={index} />
