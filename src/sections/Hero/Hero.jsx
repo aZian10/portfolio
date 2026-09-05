@@ -10,9 +10,8 @@ export default function Hero() {
           {hero.greeting}
         </p>
         <h1 className="mt-4 text-[36px] font-medium leading-tight tracking-tight text-surface-50 sm:text-[38px]">
-          {hero.name}
+          {`${hero.name} — ${hero.role}`}
         </h1>
-        <p className="mt-3 text-[13px] font-medium text-sky-400">{hero.role}</p>
         <p className="mt-4 max-w-md text-[11px] leading-relaxed text-surface-400">
           {hero.tagline}
         </p>
