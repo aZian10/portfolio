@@ -3,7 +3,7 @@ export const skills = {
   eyebrow: 'Skills',
   title: 'Technologies I work with',
   description:
-    'A curated set of tools and technologies I use to build modern, accessible web experiences.',
+    'Practical toolkit I use to design responsive interfaces, structure maintainable components, and ship collaborative projects from prototype to production, including data-driven features.',
   items: [
     {
       name: 'React',
