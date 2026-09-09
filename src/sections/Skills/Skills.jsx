@@ -10,11 +10,18 @@ export default function Skills() {
       <Container>
         <div className="grid gap-6 md:grid-cols-[220px_1fr] md:gap-9">
           <SectionTitle headingId={headingId} number={skills.number} title={skills.eyebrow} />
-          <ul
-            className="flex flex-wrap gap-x-8 gap-y-3"
-            role="list"
-            aria-label="Technologies"
-          >
+          <div className="space-y-4">
+            <div className="space-y-2">
+              <h3 className="text-[12px] font-medium text-surface-200">{skills.title}</h3>
+              <p className="max-w-md text-[12px] leading-relaxed text-surface-400">
+                {skills.description}
+              </p>
+            </div>
+            <ul
+              className="flex flex-wrap gap-x-8 gap-y-3"
+              role="list"
+              aria-label={skills.title}
+            >
             {skills.items.map((skill) => (
               <li
                 key={skill.name}
@@ -27,7 +34,8 @@ export default function Skills() {
                 {skill.name}
               </li>
             ))}
-          </ul>
+            </ul>
+          </div>
         </div>
       </Container>
     </Section>
