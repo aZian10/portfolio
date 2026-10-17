@@ -3,7 +3,7 @@ export const skills = {
   eyebrow: 'Skills',
   title: 'Technologies I work with',
   description:
-    'Practical toolkit I use to design responsive interfaces, structure maintainable components, and ship collaborative projects from prototype to production, including data-driven features.',
+    'Technologies used in my projects and listed on my GitHub profile.',
   items: [
     {
       name: 'React',
@@ -13,6 +13,11 @@ export const skills = {
     {
       name: 'JavaScript',
       description: 'Modern ES6+ for interactive, performant web experiences',
+      category: 'Frontend',
+    },
+    {
+      name: 'TypeScript',
+      description: 'Learning and building with TypeScript',
       category: 'Frontend',
     },
     {
@@ -61,11 +66,6 @@ export const skills = {
       category: 'Backend',
     },
     {
-      name: 'React Router',
-      description: 'Client-side routing with nested layouts and data loading',
-      category: 'Learning',
-    },
-    {
       name: 'Node.js',
       description: 'JavaScript runtime for backend services and development tooling',
       category: 'Learning',
@@ -74,6 +74,16 @@ export const skills = {
       name: 'Docker',
       description: 'Containerized workflows for development and deployment',
       category: 'Learning',
+    },
+    {
+      name: 'Python',
+      description: 'Used in data engineering projects',
+      category: 'Backend',
+    },
+    {
+      name: 'Apache Kafka',
+      description: 'Used in a Kafka event streaming demo',
+      category: 'Data',
     },
   ],
 }

@@ -4,7 +4,6 @@ import Container from '../../components/common/Container/Container.jsx'
 import SectionTitle from '../../components/common/SectionTitle/SectionTitle.jsx'
 
 export default function Contact() {
-  const mailtoHref = `mailto:${contact.email}`
   const headingId = 'contact-heading'
 
   return (
@@ -19,15 +18,19 @@ export default function Contact() {
             <p className="max-w-md text-[12px] leading-relaxed text-surface-400">
               {contact.description}
             </p>
-            <address className="not-italic">
-              <a
-                href={mailtoHref}
-                aria-label={`${contact.emailCta.label} at ${contact.email}`}
-                className="mt-1 py-2 inline-flex items-center gap-1 text-[12px] font-medium text-sky-400 transition-colors duration-200 motion-reduce:transition-none hover:text-sky-300 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
-              >
-                {contact.email}
-                <span aria-hidden="true">↗</span>
-              </a>
+            <address className="flex flex-wrap gap-5 not-italic">
+              {contact.socialLinks.map(({ name, href }) => (
+                <a
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-1 py-2 inline-flex items-center gap-1 text-[12px] font-medium text-sky-400 transition-colors duration-200 motion-reduce:transition-none hover:text-sky-300 focus-visible:rounded focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
+                >
+                  {name}
+                  <span aria-hidden="true">↗</span>
+                </a>
+              ))}
             </address>
           </div>
         </div>

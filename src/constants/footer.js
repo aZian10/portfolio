@@ -1,6 +1,6 @@
 export const footer = {
-  name: 'Elian David Rivera',
+  name: 'Elian David Rivera Guaca',
   tagline:
-    'Frontend Developer passionate about building clean and modern web experiences.',
-  copyright: '© 2026 Elian David Rivera. All rights reserved.',
+    'Frontend developer learning and building with React and TypeScript.',
+  copyright: '© 2026 Elian David Rivera Guaca. All rights reserved.',
 }

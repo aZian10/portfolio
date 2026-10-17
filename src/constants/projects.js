@@ -2,57 +2,29 @@ export const projects = {
   number: '02',
   eyebrow: 'Featured Projects',
   title: 'Projects I have built',
-  description:
-    'A selection of projects that show how I approach building clean, accessible, and performant web applications.',
+  description: 'Selected projects from my public GitHub repositories.',
   viewLabel: 'View project',
   items: [
     {
-      name: 'TaskFlow',
+      name: 'PowerFit',
       description:
-        'A collaborative task management app with real-time boards, deadlines, and shared team workspaces.',
-      technologies: ['React', 'Tailwind CSS', 'Supabase'],
-      github: 'https://github.com/',
-      demo: 'https://example.com/taskflow',
+        'A responsive fitness management interface built as a frontend exercise, using sample data.',
+      technologies: ['HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/aZian10/powerfit-frontend',
     },
     {
-      name: 'Weatherly',
+      name: 'Apache Kafka Order Demo',
       description:
-        'A weather dashboard that fetches live forecasts and turns them into clear, simple data visualizations.',
-      technologies: ['JavaScript', 'REST API', 'CSS Grid'],
-      github: 'https://github.com/',
-      demo: '',
+        'A Docker Compose demo that sends and reads online store order events with Kafka in KRaft mode.',
+      technologies: ['Apache Kafka', 'Docker Compose', 'PowerShell'],
+      github: 'https://github.com/aZian10/apache-kafka-demo',
     },
     {
-      name: 'RecipeBox',
+      name: 'Superstore Sales Data Pipeline',
       description:
-        'A recipe-sharing platform with searchable categories, saved favorites, and step-by-step cooking guides.',
-      technologies: ['React', 'Node.js', 'SQL'],
-      github: 'https://github.com/',
-      demo: '',
-    },
-    {
-      name: 'Chatterbox',
-      description:
-        'A real-time chat application with rooms, typing indicators, and persistent message history.',
-      technologies: ['React', 'Node.js', 'WebSocket'],
-      github: 'https://github.com/',
-      demo: 'https://example.com/chatterbox',
-    },
-    {
-      name: 'Shopline',
-      description:
-        'An e-commerce storefront with product listings, cart management, and a streamlined checkout flow.',
-      technologies: ['React', 'Node.js', 'Stripe'],
-      github: 'https://github.com/',
-      demo: '',
-    },
-    {
-      name: 'DevFolio',
-      description:
-        'A portfolio generator that turns a simple JSON profile into a fast, responsive personal site.',
-      technologies: ['React', 'Vite', 'Tailwind CSS'],
-      github: 'https://github.com/',
-      demo: '',
+        'An end-to-end data pipeline using PostgreSQL, layered data models, tests, and Apache Airflow.',
+      technologies: ['Python', 'PostgreSQL', 'Apache Airflow'],
+      github: 'https://github.com/aZian10/superstore-sales-data-pipeline',
     },
   ],
 }

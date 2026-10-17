@@ -1,26 +1,17 @@
 export const contact = {
   number: '05',
   eyebrow: 'Contact',
-  title: "Let's build something together",
-  description:
-    "I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Reach out and let's talk.",
-  email: 'elian.rivera@example.com',
-  location: 'Colombia · Remote-friendly',
-  availability: 'Currently available for freelance work and full-time roles',
+  title: 'Let’s connect',
+  description: 'Find my work on GitHub or connect with me on LinkedIn.',
+  location: 'Barranquilla, Colombia',
   socialLinks: [
     {
       name: 'GitHub',
-      href: 'https://github.com/',
+      href: 'https://github.com/aZian10',
     },
     {
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/',
+      href: 'https://www.linkedin.com/in/elian-riv',
     },
   ],
-  emailCta: {
-    label: 'Send me an email',
-  },
-  linkedinCta: {
-    label: 'View LinkedIn',
-  },
 }

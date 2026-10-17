@@ -47,6 +47,7 @@ test-results/
 Thumbs.db
 
 # AI harness files (session-specific, not project documentation)
+.atl/
 AGENTS.md
 .ai/
 .agents/

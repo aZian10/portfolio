@@ -1,9 +1,9 @@
 export const hero = {
   greeting: "Hi, I'm",
-  name: 'Elian David Rivera',
+  name: 'Elian David Rivera Guaca',
   role: 'Frontend Developer',
   tagline:
-    'I build accessible, performant web experiences with React, JavaScript, and Tailwind CSS.',
+    'Frontend developer from Colombia, learning and building with React and TypeScript.',
   primaryCta: {
     label: 'View My Work',
     href: '#projects',
