@@ -1,18 +1,29 @@
-# React + Vite
+# Elian David Rivera Guaca — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A single-page portfolio built with React, JavaScript, Vite, and Tailwind CSS. The content and project links are based on my public [GitHub profile](https://github.com/aZian10).
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm ci
+npm run dev
+```
 
-## React Compiler
+## Build and check
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm run lint
+npm run build
+npm run preview
+```
 
-## Expanding the Oxlint configuration
+## Deploy to Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Import this GitHub repository into Vercel. Vercel should detect Vite automatically. Use these settings if it asks:
 
+- Build command: `npm run build`
+- Output directory: `dist`
+- Install command: `npm install` (the lockfile is included)
+- Environment variables: none
 
+`vercel.json` sends page requests to the SPA entry point. After deployment, verify the homepage and refresh it directly. Add a canonical URL and `og:url` only after choosing the final domain.

@@ -17,20 +17,18 @@ export default function Navbar() {
 
   const closeMobileMenu = useCallback(() => {
     setIsMobileMenuOpen(false)
+    menuButtonRef.current?.focus()
   }, [])
 
   const handleKeyDown = useCallback((event) => {
     if (event.key === 'Escape' && isMobileMenuOpen) {
       closeMobileMenu()
-      menuButtonRef.current?.focus()
     }
   }, [isMobileMenuOpen, closeMobileMenu])
 
   useEffect(() => {
     if (isMobileMenuOpen) {
       firstMenuLinkRef.current?.focus()
-    } else {
-      menuButtonRef.current?.focus()
     }
   }, [isMobileMenuOpen])
 

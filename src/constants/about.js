@@ -1,16 +1,11 @@
 export const about = {
   number: '01',
   eyebrow: 'About',
-  title: 'Transforming ideas into digital experiences',
+  title: 'Learning by building useful interfaces',
   description:
-    'A passionate web developer focused on building clean, accessible, and performant applications.',
+    'Frontend developer from Colombia, learning through projects and improving previous work.',
   paragraphs: [
-    "I'm a full-stack developer based in Colombia with a deep passion for crafting web experiences that are both beautiful and functional. My approach blends modern frontend technologies with a strong foundation in user experience and accessibility.",
-    'When I\'m not coding, you\'ll find me exploring new technologies, contributing to open-source projects, or finding creative ways to solve real-world problems through software.',
-  ],
-  stats: [
-    { label: 'Years of Experience', value: '3+' },
-    { label: 'Projects Delivered', value: '15+' },
-    { label: 'Technologies Used', value: '12+' },
+    'I enjoy building interfaces that are simple, responsive, and pleasant to use. Most of what I learn comes from creating projects, experimenting with ideas, and improving previous work.',
+    'Lately, I have been focusing on React and TypeScript while gradually exploring backend development.',
   ],
 }
