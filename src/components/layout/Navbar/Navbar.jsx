@@ -3,10 +3,11 @@ import Container from '../../common/Container/Container.jsx'
 import { navigation } from '../../../constants/navigation.js'
 import useActiveSection from '../../../hooks/useActiveSection.js'
 
+const sectionIds = navigation.map(({ id }) => id)
+
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const links = navigation.filter((item) => item.id !== 'hero')
-  const sectionIds = navigation.map((item) => item.id)
   const activeId = useActiveSection(sectionIds)
   const menuButtonRef = useRef(null)
   const firstMenuLinkRef = useRef(null)
