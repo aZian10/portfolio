@@ -42,7 +42,7 @@ export default function Navbar() {
         <Container className="flex items-center justify-between py-3">
 <a
               href="#hero"
-              className="flex items-center gap-1.5 rounded text-[11px] font-semibold tracking-wide text-surface-50 transition-colors duration-300 motion-reduce:transition-none hover:text-sky-400 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
+              className="flex items-center gap-1.5 rounded text-sm font-semibold tracking-wide text-surface-50 transition-colors duration-300 motion-reduce:transition-none hover:text-sky-400 focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none"
             >
             ED
             <span
@@ -60,7 +60,7 @@ export default function Navbar() {
 <a
                       href={`#${id}`}
                       aria-current={isActive ? 'page' : undefined}
-                      className={`rounded text-[11px] transition-colors duration-300 motion-reduce:transition-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
+                      className={`rounded text-sm transition-colors duration-300 motion-reduce:transition-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface-950 focus:outline-none ${
                         isActive
                           ? 'font-semibold text-sky-400'
                           : 'font-normal text-surface-400 hover:text-surface-50'

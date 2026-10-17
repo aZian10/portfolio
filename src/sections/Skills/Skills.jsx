@@ -12,8 +12,8 @@ export default function Skills() {
           <SectionTitle headingId={headingId} number={skills.number} title={skills.eyebrow} />
           <div className="space-y-4">
             <div className="space-y-2">
-              <h3 className="text-[12px] font-medium text-surface-200">{skills.title}</h3>
-              <p className="max-w-md text-[12px] leading-relaxed text-surface-400">
+              <h3 className="text-base font-medium text-surface-200">{skills.title}</h3>
+              <p className="max-w-md text-base leading-relaxed text-surface-400">
                 {skills.description}
               </p>
             </div>
@@ -25,7 +25,7 @@ export default function Skills() {
             {skills.items.map((skill) => (
               <li
                 key={skill.name}
-                className="flex items-center gap-2 text-[11px] text-surface-300"
+                className="flex items-center gap-2 text-sm text-surface-300"
               >
                 <span
                   aria-hidden="true"

@@ -14,7 +14,7 @@ export default function About() {
             {about.paragraphs.map((paragraph, index) => (
               <p
                 key={index}
-                className="max-w-md text-[12px] leading-relaxed text-surface-400"
+                className="max-w-md text-base leading-relaxed text-surface-400"
               >
                 {paragraph}
               </p>

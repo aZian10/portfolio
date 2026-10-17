@@ -6,13 +6,13 @@ export default function Hero() {
   return (
     <section id="hero" className="bg-surface-950">
       <Container className="flex flex-col items-center justify-center pt-36 pb-24 text-center">
-        <p className="text-[11px] font-medium uppercase tracking-[0.25em] text-sky-400">
+        <p className="text-xs font-medium uppercase tracking-[0.25em] text-sky-400">
           {hero.greeting}
         </p>
-        <h1 className="mt-4 w-full max-w-3xl text-[30px] font-medium leading-tight tracking-tight text-surface-50 sm:text-[38px]">
+        <h1 className="mt-4 w-full max-w-3xl text-[32px] font-medium leading-tight tracking-tight text-surface-50 sm:text-[42px] lg:text-[48px]">
           {`${hero.name} — ${hero.role}`}
         </h1>
-        <p className="mt-4 w-full max-w-md text-[11px] leading-relaxed text-surface-400">
+        <p className="mt-4 w-full max-w-md text-base leading-relaxed text-surface-400">
           {hero.tagline}
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">

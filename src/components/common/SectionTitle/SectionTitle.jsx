@@ -12,12 +12,12 @@ export default function SectionTitle({
           className="h-1.5 w-1.5 rounded-full bg-sky-400"
         />
         {number && (
-          <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-surface-400">
+          <span className="text-xs font-medium uppercase tracking-[0.2em] text-surface-400">
             {number}
           </span>
         )}
       </div>
-      <h2 id={headingId} className="mt-3 text-[20px] font-medium tracking-tight text-surface-50">
+      <h2 id={headingId} className="mt-3 text-2xl font-medium tracking-tight text-surface-50">
         {title}
       </h2>
     </header>
